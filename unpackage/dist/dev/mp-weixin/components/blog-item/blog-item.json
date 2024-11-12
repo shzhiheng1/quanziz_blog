@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "up-avatar": "../../node-modules/uview-plus/components/u-avatar/u-avatar",
+    "uni-dateformat": "../../uni_modules/uni-dateformat/components/uni-dateformat/uni-dateformat",
+    "up-action-sheet": "../../node-modules/uview-plus/components/u-action-sheet/u-action-sheet"
+  }
+}

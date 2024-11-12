@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "博客详情",
+  "usingComponents": {
+    "up-skeleton": "../../node-modules/uview-plus/components/u-skeleton/u-skeleton",
+    "up-avatar": "../../node-modules/uview-plus/components/u-avatar/u-avatar",
+    "uni-dateformat": "../../uni_modules/uni-dateformat/components/uni-dateformat/uni-dateformat",
+    "up-parse": "../../node-modules/uview-plus/components/u-parse/u-parse"
+  }
+}

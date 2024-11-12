@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "up-skeleton": "../../node-modules/uview-plus/components/u-skeleton/u-skeleton",
+    "blog-item": "../../components/blog-item/blog-item",
+    "up-gap": "../../node-modules/uview-plus/components/u-gap/u-gap",
+    "up-loadmore": "../../node-modules/uview-plus/components/u-loadmore/u-loadmore"
+  }
+}

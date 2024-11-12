@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "uni_modules/uni-id-pages/pages/register/register",
+    "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+    "uni_modules/uni-id-pages/pages/login/login-withpwd",
+    "uni_modules/uni-id-pages/pages/login/login-smscode",
+    "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+    "uni_modules/uni-id-pages/pages/userinfo/bind-mobile/bind-mobile",
+    "uni_modules/uni-id-pages/pages/userinfo/cropImage/cropImage",
+    "uni_modules/uni-id-pages/pages/register/register-by-email",
+    "uni_modules/uni-id-pages/pages/retrieve/retrieve",
+    "uni_modules/uni-id-pages/pages/retrieve/retrieve-by-email",
+    "uni_modules/uni-id-pages/pages/common/webview/webview",
+    "uni_modules/uni-id-pages/pages/userinfo/change_pwd/change_pwd",
+    "uni_modules/uni-id-pages/pages/register/register-admin",
+    "uni_modules/uni-id-pages/pages/userinfo/set-pwd/set-pwd",
+    "uni_modules/uni-id-pages/pages/userinfo/deactivate/deactivate",
+    "uni_modules/uni-id-pages/pages/userinfo/realname-verify/realname-verify"
+  ],
+  "subPackages": [
+    {
+      "root": "blog-pages",
+      "pages": [
+        "add-blog/add-blog",
+        "detail-blog/detail-blog",
+        "edit-blog/edit-blog"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "文章博客",
+    "navigationBarBackgroundColor": "#2979ff",
+    "backgroundColor": "#f9f9f9"
+  },
+  "tabBar": {
+    "selectedColor": "#2979ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/icons/home.png",
+        "selectedIconPath": "static/image/icons/home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/image/icons/mine.png",
+        "selectedIconPath": "static/image/icons/mine_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

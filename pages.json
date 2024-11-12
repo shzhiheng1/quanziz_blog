@@ -1,0 +1,187 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "博客列表",
+				"enablePullDownRefresh": true
+			}
+			
+		},
+		{
+			"path" : "pages/mine/mine",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的"
+			}
+		}
+	,{
+    "path": "uni_modules/uni-id-pages/pages/register/register",
+    "style": {
+        "navigationBarTitleText": "注册"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+    "style": {
+        "navigationBarTitleText": "登录"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/login/login-withpwd",
+    "style": {
+        "navigationBarTitleText": "账号密码登录"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/login/login-smscode",
+    "style": {
+        "navigationBarTitleText": "手机验证码登录"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+    "style": {
+        "navigationBarTitleText": "个人资料"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/userinfo/bind-mobile/bind-mobile",
+    "style": {
+        "navigationBarTitleText": "绑定手机号码"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/userinfo/cropImage/cropImage",
+    "style": {
+        "navigationBarTitleText": ""
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/register/register-by-email",
+    "style": {
+        "navigationBarTitleText": "邮箱验证码注册"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/retrieve/retrieve",
+    "style": {
+        "navigationBarTitleText": "重置密码"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/retrieve/retrieve-by-email",
+    "style": {
+        "navigationBarTitleText": "通过邮箱重置密码"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/common/webview/webview",
+    "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": ""
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/userinfo/change_pwd/change_pwd",
+    "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "修改密码"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/register/register-admin",
+    "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "注册管理员账号"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/userinfo/set-pwd/set-pwd",
+    "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "设置密码"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/userinfo/deactivate/deactivate",
+    "style": {
+        "navigationBarTitleText": "注销账号"
+    }
+}
+,{
+    "path": "uni_modules/uni-id-pages/pages/userinfo/realname-verify/realname-verify",
+    "style": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "实名认证"
+    }
+}
+],
+	"subPackages": [
+		{
+			"root": "blog-pages",
+			"pages": [
+				{
+					"path": "add-blog/add-blog",
+					"style": {
+						"navigationBarTitleText": "新增博客"
+					}
+				},
+				{
+					"path" : "detail-blog/detail-blog",
+					"style" : 
+					{
+						"navigationBarTitleText" : "博客详情"
+					}
+				},
+				{
+					"path" : "edit-blog/edit-blog",
+					"style" : 
+					{
+						"navigationBarTitleText" : "编辑博客"
+					}
+				}
+			]
+			
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "文章博客",
+		"navigationBarBackgroundColor": "#2979ff",
+		"backgroundColor": "#f9f9f9"
+	},
+	"tabBar": {
+	    "selectedColor": "#2979ff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+                "iconPath": "static/image/icons/home.png",
+				"selectedIconPath": "static/image/icons/home_selected.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/image/icons/mine.png",
+				"selectedIconPath": "static/image/icons/mine_selected.png",
+				"text": "我的"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"uniIdRouter": {
+		"loginPage": "uni_modules/uni-id-pages/pages/login/login-withpwd", 
+		"needLogin": [
+					"blog-pages/detail-blog/detail-blog" ,
+					"blog-pages/add-blog/add-blog"
+				],
+		"resToLogin": true
+	}
+}

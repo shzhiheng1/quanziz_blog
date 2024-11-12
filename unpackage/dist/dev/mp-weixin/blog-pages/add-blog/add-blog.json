@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "新增博客",
+  "usingComponents": {
+    "up-button": "../../node-modules/uview-plus/components/u-button/u-button",
+    "up-col": "../../node-modules/uview-plus/components/u-col/u-col",
+    "up-row": "../../node-modules/uview-plus/components/u-row/u-row"
+  }
+}
